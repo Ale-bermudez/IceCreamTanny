@@ -3113,6 +3113,8 @@ public class Sistema extends javax.swing.JFrame {
         List<Deuda> listarDeuda = this.deuDAO.listarDeuda(socio);
         this.modeloVenta = (DefaultTableModel) this.tablaVentas.getModel();
         Object[] obj = new Object[9];
+        
+        System.out.println("  ");
 
         for (int i = 0; i < listarDeuda.size(); ++i) {
             obj[0] = ((Deuda) listarDeuda.get(i)).getId_producto();
